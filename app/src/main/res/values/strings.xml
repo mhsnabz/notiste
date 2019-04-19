@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Not Iste</string>
+
+    <string-array name="classes">
+        <item>Sınıfını Seç</item>
+        <item>Hazırlık Sınıfı</item>
+        <item>1.sınıf</item>
+        <item>2.sınıf</item>
+        <item>3.sınıf</item>
+        <item>4.sınıf</item>
+        <item>5.sınıf</item>
+    </string-array>
+
+    <string-array name="typeExams">
+        <item>Sınavı Seçiniz</item>
+        <item>vize</item>
+        <item>finall</item>
+        <item>butunleme</item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="library_name">DENEME</string>
+    <string name="about_text">DENEME</string>
+
+
+    <string name="html">
+        <![CDATA[
+        <h1>Uygulamanın Amacı</h1>
+
+        <p>  NotIste uygulaması <b>İskenderun Teknik Üniversitesi(İSTE)</b>
+           <u>  öğretim görevlileri </u>  ve <u>öğrencileri</u> için
+           geliştirilmiştir
+            </p>
+             <p> <b>Hiçbir Ticari Amacı Yoktur</b>
+            </p>
+
+
+        <p>Geliştiriciler
+        <ul>
+        <li>~null~</li>
+
+        </ul>
+
+        ]]>
+    </string>
+
+    <string name="mesajlasmayikaldir">
+        <![CDATA[
+
+
+            <ul> <p>\u25A0 Eğer Mesaj Göndermek İsterseniz Tekrar Mesajlaşma İsteği Atmanız Gerekmektedir </p> </ul></br>
+            <ul><p>\u25A0 Mesajlar Sizden Silinecektir </p></ul>
+
+
+
+        ]]>
+    </string>
+    <string name="englle">
+        <![CDATA[
+
+
+            <ul> <p>\u25A0 Size Artık Mesaj Gönderemez </p> </ul></br>
+            <ul><p>\u25A0 Gönderilerinize Yorum Yapabilir,Beğenebilir </p></ul>
+
+
+
+        ]]>
+    </string>
+    <string name="names"><![CDATA[<p><h2>List of Names:</h2></p><p>&#8226;name1<br />&#8226;name2<br /></p>]]></string>
+
+
+</resources>

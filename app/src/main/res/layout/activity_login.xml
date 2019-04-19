@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginRegisterForgetPassword.LoginActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    >
+    <RelativeLayout
+        android:id="@+id/forget_password"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/fragment_background">
+        <ImageView
+            android:onClick="myfonk"
+            android:id="@+id/logo"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:src="@mipmap/logo_without_text"
+
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="12dp"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:hint="E-posta Adresinizi Giriniz"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textSize="16sp"
+
+            app:met_floatingLabel="highlight" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="12dp"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:hint="Şifrenizi Giriniz"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:met_floatingLabel="normal"
+
+            />
+
+        <Button
+
+            android:id="@+id/loginClick"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/password"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:text="GİRİŞ"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+     <Button
+
+            android:onClick="myfonk"
+            android:id="@+id/goRegister"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@id/loginClick"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/button_create_account"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:text="Hesap Oluştur"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:onClick="myfonk"
+            android:id="@+id/forgerPassWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:text="Şifremi Unuttum..."
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

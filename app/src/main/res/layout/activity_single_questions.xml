@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QUESTIONS.SingleQuestionsActivity">
+    <include layout="@layout/toolbar"
+        android:id="@+id/MianToolBar"/>
+    <RelativeLayout
+        android:layout_below="@+id/MianToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            >
+            <RelativeLayout
+                android:id="@+id/realLay_editText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+                <com.rengwuxian.materialedittext.MaterialEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="12dp"
+                    android:id="@+id/searchLesson_note"
+                    android:hint="Ders Adı Giriniz  "
+                    android:textSize="12sp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:textAlignment="center"
+                    app:met_floatingLabel="normal"
+                    />
+                <android.support.v7.widget.RecyclerView
+
+                    android:id="@+id/recyclerView_LessonsName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="75dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="2dp"
+                    >
+
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relLayout_post"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+
+                >
+                <TextView
+                    android:id="@+id/_tv_lessonName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="12dp"
+                    android:textColor="#0114A7"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:textSize="12dp"
+                    android:layout_marginTop="12dp"
+                    />
+                <android.support.v7.widget.CardView
+                    android:layout_below="@id/_tv_lessonName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="8dp"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/profilePicture"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="12dp"
+                            android:src="@drawable/placeholder_image"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            />
+                        <TextView
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="56dp"
+                            android:layout_marginTop="20dp"
+                            android:id="@+id/tv_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="mhsnabz"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="12dp"
+                            android:fontFamily="@font/nunito_sans_semibold"
+                            android:textColor="#000"
+
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="50dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="4dp"
+
+                        >
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/upload_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="80dp"
+
+                            >
+
+                        </android.support.v7.widget.RecyclerView>
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:textSize="14dp"
+                            android:hint="Yorum Ekle"
+                            android:id="@+id/post_not"
+
+                            android:textAlignment="center"
+                            android:fontFamily="@font/nunito_sans_semibold"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="64dp"
+                            android:layout_marginRight="64dp"
+                            android:textColor="#000"
+
+                            />
+                        <com.github.clans.fab.FloatingActionButton
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:id="@+id/post_click"
+
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginBottom="12dp"
+                            android:layout_marginTop="2dp"
+                            android:scaleType="centerInside"
+                            app:backgroundTint="@color/colorPrimaryDark"
+                            android:src="@drawable/send"
+                            app:rippleColor="@color/gray"
+
+                            />
+                        <com.github.clans.fab.FloatingActionMenu
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginBottom="12dp"
+                            android:layout_marginLeft="2dp"
+                            app:fabSize="normal"
+                            android:src="@drawable/dosya_ekle"
+                            app:menu_openDirection="up"
+
+
+                            app:menu_labels_position="right"
+                            app:rippleColor="@color/gray"
+                            >
+                            <com.github.clans.fab.FloatingActionButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginBottom="12dp"
+                                android:layout_marginLeft="2dp"
+                                app:fabSize="mini"
+                                android:src="@drawable/dosya_ekle"
+                                app:rippleColor="@color/gray"
+                                app:fab_colorNormal="@color/colorPrimaryDark"
+                                app:fab_label="Dosya Ekle(.pdf/.ppt/.wtx)"
+                                />
+                            <com.github.clans.fab.FloatingActionButton
+                                android:id="@+id/selecte_image_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:fab_label="Resim Ekle(.jpg/.png/.swg/.gif)"
+                                app:fabSize="mini"
+                                android:src="@drawable/add_picture"
+                                app:rippleColor="@color/gray"
+                                app:fab_colorNormal="@color/colorPrimaryDark"
+
+                                />
+                        </com.github.clans.fab.FloatingActionMenu>
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

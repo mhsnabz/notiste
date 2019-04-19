@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<android.support.v7.widget.CardView
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="8dp"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="5dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/profileLay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+            >
+            <ProgressBar
+                android:layout_margin="4dp"
+
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/progressBar"
+                android:layout_centerInParent="true"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/placeholder_image"
+                android:layout_margin="4dp"
+                android:id="@+id/profileImage"
+                />
+
+        </RelativeLayout>
+        <TextView
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/profileLay"
+            android:layout_marginTop="8dp"
+            android:id="@+id/student_name"
+            android:text="Student STUDENT"
+            android:textColor="#000"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:layout_marginLeft="4dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@id/student_number"
+            android:layout_toEndOf="@id/profileLay"
+            android:layout_below="@id/student_name"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:textColor="@color/linkColo"
+            android:text="11111"
+            android:textSize="12dp"
+            />
+       <TextView
+           android:id="@+id/sinif"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/student_name"
+           android:layout_toEndOf="@id/student_number"
+           android:layout_marginLeft="8dp"
+           android:layout_marginTop="4dp"
+           android:textSize="12dp"
+           android:fontFamily="@font/nunito_sans_semibold"
+           android:textColor="#000"
+           android:text="4. Sınıf"
+           />
+        <TextView
+            android:layout_toEndOf="@id/profileLay"
+            android:layout_below="@id/student_number"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/student_email"
+            android:textSize="12dp"
+            android:text="contack@iste.edu.tr"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/send_messega_scientist"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:id="@+id/send_message"
+            />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+</RelativeLayout>

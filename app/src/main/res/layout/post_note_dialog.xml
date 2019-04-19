@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent">
+        <RelativeLayout
+            android:layout_width="500dp"
+            android:layout_height="500dp"
+            android:layout_margin="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            >
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/realLay_editText"
+                >
+                <com.rengwuxian.materialedittext.MaterialEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                     android:layout_margin="12dp"
+                    android:id="@+id/searchLesson_note"
+                    android:hint="Not Paylaşacağınız Dersi Giriniz "
+                    android:textSize="12sp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:textAlignment="center"
+                    app:met_floatingLabel="normal"
+                    />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_LessonsName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="75dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="2dp"
+                    >
+
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout_post"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+
+                android:visibility="gone"
+
+                >
+                <TextView
+                    android:id="@+id/_tv_lessonName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="12dp"
+                    android:text="#BMG, #Bilgisayar Mühendisliğine Giriş"
+                    android:textColor="#0114A7"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:textSize="12dp"
+                    android:layout_marginTop="12dp"
+                    />
+                <android.support.v7.widget.CardView
+                    android:layout_below="@id/_tv_lessonName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="8dp"
+
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/profilePicture"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="4dp"
+                            android:src="@drawable/mahsun"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            />
+                        <TextView
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="12dp"
+                            android:id="@+id/tv_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="mhsnabz"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="12dp"
+                            android:fontFamily="@font/nunito_sans_semibold"
+                            android:textColor="#000"
+
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="50dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="4dp"
+                        >
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:textSize="10dp"
+                            android:hint="Yorum Ekle"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/nunito_sans_semibold"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="70dp"
+
+                            />
+                           <android.support.design.widget.FloatingActionButton
+                               android:layout_width="60dp"
+                               android:layout_height="60dp"
+                               android:layout_alignParentBottom="true"
+                               android:layout_alignParentEnd="true"
+                               android:layout_marginBottom="12dp"
+                               android:layout_marginRight="8dp"
+                               app:backgroundTint="@color/colorPrimaryDark"
+                               android:src="@drawable/send"
+                               app:rippleColor="@color/gray"
+
+                               />
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+        </RelativeLayout>
+</RelativeLayout>

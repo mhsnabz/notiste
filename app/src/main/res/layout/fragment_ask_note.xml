@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Main.AskNoteFragment"
+    android:layout_margin="15dp"
+
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/fragment_background">
+
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            app:met_floatingLabel="highlight"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search"
+            android:hint="Not Ara"
+            android:textAlignment="center"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:textSize="12sp"
+
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@id/search"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerViewNot"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/ask_note_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rippleColor="@color/gray"
+            android:src="@drawable/note"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            app:borderWidth="0dp"
+            app:elevation="8dp"
+            />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Users.UserProfileActivity">
+
+    <include layout="@layout/toolbar" android:id="@+id/toolbar"></include>
+    <RelativeLayout
+        android:id="@+id/relLay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_below="@id/back"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/placeholder_image"
+            android:id="@+id/profilePic"/>
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:layout_below="@id/back"
+            android:layout_toEndOf="@id/profilePic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:textSize="16sp"
+            android:text="NAME"
+            />
+        <TextView
+            android:textColor="@color/gray"
+
+            android:id="@+id/major"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_toEndOf="@id/profilePic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:text="MAJOR"
+            />
+        <!-- #0114A7-->
+        <TextView
+            android:textColor="@color/gray"
+
+            android:id="@+id/Class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/major"
+            android:layout_toEndOf="@id/profilePic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:text="CLASS"
+            />
+        <TextView
+            android:textColor="#0114A7"
+            android:id="@+id/contack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Class"
+            android:layout_toEndOf="@id/profilePic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:textSize="10sp"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:text="contack@contack.com"
+            />
+
+
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:visibility="invisible"
+            android:layout_below="@id/contack"
+            android:layout_toEndOf="@id/profilePic"
+            android:id="@+id/request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+
+            android:layout_marginLeft="4dp"
+            android:text="Mesaj İsteği Gönder"
+            android:textSize="9sp"
+
+            android:background="@drawable/send_message_request"
+            android:padding="2dp"
+            android:textColor="#fff"
+            android:fontFamily="@font/nunito_sans_semibold"
+            />
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/contack"
+            android:layout_toEndOf="@id/profilePic"
+            android:visibility="invisible"
+            android:id="@+id/wait_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="4dp"
+            android:text="Mesaj İsteği Gönderildi"
+            android:textSize="9sp"
+            android:background="@drawable/waiting_request"
+            android:padding="2dp"
+            android:textColor="#fff"
+            android:fontFamily="@font/nunito_sans_semibold"
+            />
+        <LinearLayout
+            android:layout_below="@id/contack"
+            android:visibility="invisible"
+           android:layout_toEndOf="@id/profilePic"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:id="@+id/accep_cancel"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:id="@+id/accept"
+                android:padding="2dp"
+                android:layout_margin="4dp"
+                android:background="@android:color/transparent"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/accept"
+                />
+            <ImageButton
+                android:id="@+id/cancel"
+                android:padding="2dp"
+                android:layout_margin="4dp"
+                android:background="@android:color/transparent"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/cancel"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linLaySendMessage"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contack"
+            android:layout_toEndOf="@id/profilePic"
+            android:weightSum="2"
+            >
+
+            <ImageButton
+                android:layout_weight="1"
+                android:id="@+id/send_message"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="4dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/profilemessage" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mesaj Gönder"
+                android:layout_marginTop="18dp"
+                android:textSize="14sp"
+                android:textColor="#000"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/relLay1"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            >
+        </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

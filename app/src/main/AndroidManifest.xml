@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="iste.not.com">
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".NotIste"
+        android:allowBackup="true"
+        android:appComponentFactory="whateverString"
+        android:icon="@mipmap/logo_without_text"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_without_text"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:appComponentFactory">
+        <activity android:name=".Profile.SendErrorActivity"></activity>
+        <activity android:name=".POST.PdfWebViewActivity" />
+        <activity android:name=".POST.AllFilesActivity" />
+        <activity android:name=".ScientistOneToOneChat.ScientistOneToOneChatActivity" />
+        <activity android:name=".scientist.menu.ScientistMessagesActivity" />
+        <activity android:name=".settingAndEdit.settings.NotificaitonSettingsActivity" />
+        <activity android:name=".scientist.menu.ScientistEditActivity" />
+        <activity android:name=".scientist.Post_Notice.ScientistPostNoticesActivity" />
+        <activity android:name=".scientist.Post_Notice.ChooseNoticesLessonActivity" />
+        <activity android:name=".scientist.Post_Notice.ScientistPostActivity" />
+        <activity android:name=".scientist.GetMyStudent.LessonsStudentsActivity" />
+        <activity android:name=".scientist.menu.MyStudentsActivity" />
+        <activity android:name=".Profile.ExamsResults.ProfileExamsResultsActivity" />
+        <activity android:name=".scientist.Profile.ScientistMainProfileActivity" />
+        <activity android:name=".Profile.ScientistPosted.ScientistLessonsPostActivity" />
+        <activity android:name=".Profile.ScientistPosted.PostActivity" />
+        <activity android:name=".Profile.ScientistPosted.MyLessonActivity" />
+        <activity android:name=".scientist.Post_Exams_Result.PostExamsResultsActivity" />
+        <activity android:name=".scientist.menu.ChoosLessonActivity" />
+        <activity android:name=".DenemeVisionActivity" />
+        <activity
+            android:name=".scientist.menu.ExamsResultActivity"
+            android:label="Read Text" />
+        <activity android:name=".scientist.Post_Notice.ScientistSinglePostActivity" />
+        <activity android:name=".scientist.menu.PostNoteScientistActivity" />
+        <activity android:name=".Profile.notificaitonActivities.NotificaitionActiviesActivity" />
+        <activity android:name=".settingAndEdit.settings.setting_about" />
+        <activity android:name=".settingAndEdit.settings.setting_password" />
+        <activity android:name=".Messages.RequestActivity" />
+
+        <service android:name=".NotificationService.FirebaseInstanceService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".AnaSayfaActivity" />
+        <activity android:name=".Main.MainActivity" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginRegisterForgetPassword.RegisterActivity" />
+        <activity android:name=".LoginRegisterForgetPassword.LoginActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="ocr" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".LoginRegisterForgetPassword.ForgetPassword" />
+        <activity android:name=".Profile.ProfileActivity" />
+        <activity android:name=".settingAndEdit.EditActivity" />
+        <activity android:name=".settingAndEdit.SettingActivity" />
+        <activity android:name=".Profile.scientistActivity" />
+        <activity android:name=".DersEkleme.DersEkleActivity" />
+        <activity android:name=".POST.PostNoteActivity" />
+        <activity android:name=".scientist.ScientistMainActivity" />
+        <activity android:name=".scientist.ScientisLoginActivity" />
+        <activity android:name=".NewScientistActivity" />
+        <activity android:name=".scientist.ScientistProfileActivity" />
+        <activity android:name=".Users.UserProfileActivity" />
+        <activity android:name=".POST.SingleLessonsPostActivity" />
+        <activity android:name=".POST.ImageLoaderActivity" />
+        <activity android:name=".QUESTIONS.SingleQuestionsActivity" />
+        <activity android:name=".NOTICES.SingleNoticesActivity" />
+        <activity android:name=".Profile.NotificationActivity" />
+        <activity android:name=".Profile.MyPostActivity" />
+        <activity android:name=".Messages.MessagesActivity" />
+        <activity android:name=".Messages.OneToOneChatActivity" />
+        <activity android:name=".Messages.CreateNewMessageActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Messages.MessagesActivity">
+<include layout="@layout/toolbar" android:id="@+id/toolbar">
+</include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/messagesRequest"
+        android:textColor="@color/linkColo"
+        android:text="5 Tane Mesaj İsteği"
+        android:textSize="18sp"
+        android:fontFamily="@font/nunito_sans_semibold"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/messagesRequest"
+        android:id="@+id/messages"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

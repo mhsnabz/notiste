@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<android.support.v7.widget.CardView
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginTop="6dp"
+    app:cardCornerRadius="8dp"
+    android:elevation="5dp"
+    android:layout_marginBottom="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dersHakinda"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="4dp"
+            android:text="Edebiyat 1.hafta Konuları "
+            android:textColor="#000"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:textSize="14sp"
+            >
+
+
+        </TextView>
+        <android.support.v7.widget.RecyclerView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/datas"
+            android:layout_below="@id/dersHakinda"
+            android:layout_centerHorizontal="true"
+            ></android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+
+            android:visibility="visible"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:id="@+id/linLay_images"
+            android:layout_below="@+id/dersHakinda"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/images"
+                android:layout_below="@id/dersHakinda"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/images"
+                />
+            <TextView
+                android:id="@+id/datasCount"
+                android:layout_margin="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="8sp"
+                android:textColor="#000"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:text="2 Tane Dosya"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@id/linLay_images"
+            android:id="@+id/linLay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+
+                android:id="@+id/commentClickdefault"
+                android:padding="8dp"
+                android:src="@drawable/comment_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                />
+            <TextView
+
+                android:layout_centerVertical="true"
+                android:text="Hiç Yorum Yapılmamış"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:textSize="10sp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/commentCountdefult"
+                />
+
+
+            <ImageView
+                android:id="@+id/commentClick"
+                android:padding="8dp"
+                android:src="@drawable/comment_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:visibility="gone"
+                />
+            <TextView
+
+                android:layout_centerVertical="true"
+                android:text="2 Tane Yorum"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/comemntCount"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_below="@id/linLay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="1 dakika önce"
+            android:textSize="10sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/time"
+            android:fontFamily="@font/nunito_sans_semibold"
+
+            />
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+</RelativeLayout>

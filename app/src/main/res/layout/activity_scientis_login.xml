@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".scientist.ScientisLoginActivity"
+    android:background="@color/colorPrimaryDark"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp"
+    android:background="@drawable/fragment_background"
+    >
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/scientist_black"
+        android:id="@+id/scientistProfilePicture"
+
+        />
+        <com.rengwuxian.materialedittext.MaterialEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/scientistProfilePicture"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/scientisEmail"
+            android:hint="E-Posta Adresinizi Giriniz"
+            android:textAlignment="center"
+            android:textSize="14sp"
+
+            />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/scientisEmail"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/scientisPassword"
+        android:hint="* * * * * * * "
+        android:textAlignment="center"
+        android:textSize="14sp"
+
+        />
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/scientisEmail"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/button_background"
+        android:text="İleri"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:fontFamily="@font/nunito_sans_semibold"
+        />
+    <Button
+        android:visibility="visible"
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/scientisPassword"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/button_background"
+        android:text="Giriş"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:fontFamily="@font/nunito_sans_semibold"
+        />
+</RelativeLayout>
+
+
+</RelativeLayout>

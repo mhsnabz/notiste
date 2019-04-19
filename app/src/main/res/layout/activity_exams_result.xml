@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".scientist.menu.ExamsResultActivity">
+    <include layout="@layout/toolbar" android:id="@+id/toolbar"></include>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/resultImage"
+        />
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/showResult"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="Sonuçları Göster"
+        android:textColor="#fff"
+        android:fontFamily="@font/nunito_sans_semibold"
+        />
+    <Button
+
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="İleri"
+        android:textColor="#fff"
+        android:fontFamily="@font/nunito_sans_semibold"
+        />
+    <ScrollView
+        android:id="@+id/scroolView"
+        android:layout_margin="8dp"
+        android:layout_below="@id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:visibility="invisible"
+        android:layout_below="@id/back"
+        android:textSize="15sp"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/resultText"
+        android:fontFamily="@font/nunito_sans_semibold"
+        android:textColor="#000"
+        />
+    </ScrollView>
+    <Spinner
+        android:visibility="invisible"
+        android:id="@+id/spinner"
+       android:layout_above="@id/next"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></Spinner>
+    <ImageButton
+        android:visibility="invisible"
+        android:onClick="back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:background="@android:color/transparent"
+        android:src="@drawable/back"
+        android:id="@+id/back"
+        />
+</RelativeLayout>

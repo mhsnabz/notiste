@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="2dp"
+        app:cardCornerRadius="6dp"
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TeacherName"
+        android:textColor="@color/linkColo"
+        android:fontFamily="@font/nunito_sans_semibold"
+        android:textSize="12sp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/teacherName"
+        android:textStyle="italic"
+        />
+    <TextView
+        android:id="@+id/lessonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teacherName"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:text="Lesson"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="4dp"
+        android:fontFamily="@font/nunito_sans_semibold"
+        />
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

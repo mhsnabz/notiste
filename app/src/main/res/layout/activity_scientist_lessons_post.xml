@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.ScientistPosted.ScientistLessonsPostActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="4dp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/scientist_white"
+                />
+            <ProgressBar
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/progressBar"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:text="Teacher Name"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_marginLeft="12dp"
+                android:id="@+id/priotiry"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:textSize="12sp"
+
+                android:textStyle="italic"
+                android:textColor="#fff"
+                />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        app:cardCornerRadius="5dp"
+        android:elevation="5dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+
+                android:id="@id/lessonName"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:text="lessonName"
+                android:textColor="@color/linkColo"
+                android:textSize="15sp"
+                android:fontFamily="@font/nunito_sans_semibold"
+                />
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/data_recyclerView"
+                android:layout_below="@id/lessonName"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/yorum"
+                android:layout_below="@id/data_recyclerView"
+                android:text="deneme"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:textColor="#000"
+
+                />
+            <RelativeLayout
+                android:id="@+id/likeRelLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/yorum"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/linLay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/likeCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="20 kişi beğendi"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:textSize="10sp"
+                        android:visibility="gone"
+                        />
+
+                    <ImageView
+                        android:id="@+id/commentClickdefault"
+                        android:padding="8dp"
+                        android:src="@drawable/comment_button"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+
+                        />
+                    <TextView
+
+                        android:layout_centerVertical="true"
+                        android:text="Hiç Yorum Yapılmamış"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:textSize="10sp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/commentCountdefult"
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/commentClick"
+                        android:padding="8dp"
+                        android:src="@drawable/comment_button"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:visibility="gone"
+                        />
+                    <TextView
+
+                        android:layout_centerVertical="true"
+                        android:text="2 Tane Yorum"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:textSize="10sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/comemntCount"
+                        android:layout_gravity="center_vertical"
+                        android:visibility="gone"
+                        />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_below="@id/linLay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="1 dakika önce"
+                    android:textSize="10sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:id="@+id/time"
+                    android:fontFamily="@font/nunito_sans_semibold"
+
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <RelativeLayout
+        android:layout_below="@id/card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/commentRec"
+            android:layout_marginBottom="62dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+
+            android:layout_alignParentBottom="true"
+            android:id="@+id/commentEditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:weightSum="20"
+            >
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="18"
+                android:layout_margin="4dp"
+                android:hint="Yorum Yap"
+                android:textSize="12dp"
+                android:textAlignment="center"
+                android:id="@+id/comment_edittext"
+                android:fontFamily="@font/nunito_sans_semibold"
+                />
+            <ImageButton
+                android:background="@android:color/transparent"
+                android:id="@+id/sendButton"
+                android:src="@drawable/ic_send_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:layout_marginRight="6dp"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

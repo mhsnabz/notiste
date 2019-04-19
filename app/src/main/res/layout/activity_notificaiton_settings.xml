@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settingAndEdit.settings.NotificaitonSettingsActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        >
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="4dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="16sp"
+                        android:id="@+id/begeniBaslik"
+                        android:layout_margin="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="BEĞENİLER"
+                        android:textColor="@color/colorPrimaryDark" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_below="@id/begeniBaslik"
+                        android:layout_margin="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="Senin Gönderini Beğendi "
+                        android:textColor="#000" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        app:theme="@style/BrandedSwitch.control"
+                        android:id="@+id/likeSwitch"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:textOff="off"
+                        android:textOn="on"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="2dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/mesajBaslik"
+                        android:textSize="16sp"
+                        android:layout_margin="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="MESAJLAR "
+                        android:textColor="@color/colorPrimaryDark" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_below="@id/mesajBaslik"
+                        android:layout_margin="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="Yeni Bir Mesaj Var "
+                        android:textColor="#000" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        app:theme="@style/BrandedSwitch.control"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/messageSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:textOff="off"
+                        android:textOn="on"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="2dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/yorumBaslik"
+                    android:textSize="16sp"
+                    android:layout_margin="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="YORUMLAR"
+                    android:textColor="@color/colorPrimaryDark" />
+                <TextView
+                    android:textSize="12sp"
+                    android:layout_below="@id/yorumBaslik"
+                    android:layout_margin="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="Senin Gönderine Yorum Yapıldı"
+                    android:textColor="#000" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/commentSwitch"
+                    app:theme="@style/BrandedSwitch.control"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:textOff="off"
+                    android:textOn="on"
+                    />
+            </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="2dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/istekBaslik"
+                        android:textSize="16sp"
+                        android:layout_margin="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="İSTEKLER"
+                        android:textColor="@color/colorPrimaryDark" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_below="@id/istekBaslik"
+                        android:layout_margin="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="Sana Mesaj Göndermek İsteyen Biri Var "
+                        android:textColor="#000" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/messageRequestSwitch"
+                        app:theme="@style/BrandedSwitch.control"                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:textOff="off"
+                        android:textOn="on"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="1dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:id="@+id/notBaslik"
+                        android:text="NOT"
+                        android:layout_margin="4dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        />
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_below="@id/notBaslik"
+                        android:layout_margin="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="Yeni Bir Not Paylaşıldı "
+                        android:textColor="#000" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/noteSwicth"
+                        app:theme="@style/BrandedSwitch.control"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:textOff="off"
+                        android:textOn="on"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="1dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:id="@+id/duyuruBaslik"
+                        android:layout_margin="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="DUYURULAR"
+                        android:textColor="@color/colorPrimaryDark" />
+                    <TextView
+                        android:layout_margin="4dp"
+                        android:textColor="#000"
+                        android:textSize="12dp"
+                        android:layout_below="@id/duyuruBaslik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="Yeni Bir Duyuru Yapıldı "
+                         />
+
+                    <android.support.v7.widget.SwitchCompat
+                        app:theme="@style/BrandedSwitch.control"
+                        android:id="@+id/noticesSwitch"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:textOff="off"
+                        android:textOn="on"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="1dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:id="@+id/soruBaslik"
+                        android:layout_margin="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="SORU "
+                        android:textColor="@color/colorPrimaryDark" />
+                    <TextView
+                        android:layout_below="@id/soruBaslik"
+                        android:textSize="12sp"
+                        android:layout_margin="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="Cevap Bekleyen Bir Soru Var"
+                        android:textColor="#000" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/askSwitch"
+                        app:theme="@style/BrandedSwitch.control"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:textOff="off"
+                        android:textOn="on"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="1dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="16sp"
+                        android:id="@+id/sonucBaslik"
+                        android:layout_margin="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="SINAV SONUÇLARI"
+                        android:textColor="@color/colorPrimaryDark" />
+                    <TextView
+                        android:textSize="12sp"
+                        android:layout_below="@id/sonucBaslik"
+                        android:layout_margin="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="Hacan Sınav Sonuçlarını Açıkladı "
+                        android:textColor="#000" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        app:theme="@style/BrandedSwitch.control"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:textOff="off"
+                        android:textOn="on"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="1dp"
+                android:elevation="5dp"
+                android:visibility="gone"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/dersNotBaslik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="DERS NOTLARI"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/dersNotBaslik"
+                        android:layout_margin="4dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="Hocan Yeni Bir Not Paylaştı"
+                        android:textColor="#000"
+                        android:textSize="12sp" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:buttonTint="@color/colorPrimaryDark"
+                        android:textOff="off"
+                        android:textOn="on"
+                        app:theme="@style/BrandedSwitch.control" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

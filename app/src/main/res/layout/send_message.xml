@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:src="@drawable/placeholder_image"
+        android:id="@+id/profilePic"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/linkColo"
+        android:layout_toStartOf="@id/profilePic"
+        android:text="User"
+        android:textSize="12sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        android:fontFamily="@font/nunito_sans_semibold"
+        android:id="@+id/name"
+        />
+    <TextView
+        android:longClickable="true"
+        android:layout_below="@id/name"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/profilePic"
+        android:layout_marginTop="4dp"
+        android:text="Yorum asd "
+        android:layout_marginRight="4dp"
+        android:fontFamily="@font/nunito_sans_semibold"
+        android:textSize="13sp"
+        android:background="@drawable/sender_background"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:textIsSelectable="true"
+        />
+    <RelativeLayout
+        android:layout_marginTop="4dp"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+
+        android:layout_below="@id/comment"
+        >
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:textSize="8dp"
+            android:text="11:02" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

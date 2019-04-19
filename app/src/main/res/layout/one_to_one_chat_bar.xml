@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/profilePic"
+        android:src="@drawable/placeholder_image"
+        android:layout_margin="4dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_toEndOf="@id/profilePic"
+        >
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAME"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:textColor="#fff"
+            />
+        <TextView
+            android:id="@+id/online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Çevirim İçi"
+            android:layout_marginTop="2dp"
+            android:textSize="10dp"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/options"
+        android:onClick="options"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/options"
+        />
+
+</RelativeLayout>

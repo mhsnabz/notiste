@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.SendErrorActivity">
+
+    <RelativeLayout
+        android:id="@+id/adminToolbar"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/admin"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/admin"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/notIste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/admin"
+            android:layout_centerVertical="true"
+            android:text="NOT ISTE "
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:layout_marginLeft="10dp"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_toEndOf="@id/notIste"
+            android:layout_centerVertical="true"
+            android:src="@drawable/verified_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/messagesRec"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/adminToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linlayMessage"
+        android:layout_marginBottom="5dp"
+        ></android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/linlayMessage"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="20"
+        >
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="18"
+            android:hint="Yeni Bir Mesaj Yaz"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/new_message_edittex"
+
+            />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/send_button"
+            android:id="@+id/sendButton"
+            />
+    </LinearLayout>
+</RelativeLayout>

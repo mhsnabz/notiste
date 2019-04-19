@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#ff0000"
+    android:weightSum="10"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resim Seçiniz"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/nunito_sans_semibold"
+        android:textColor="#fff"
+        android:layout_marginLeft="8dp"
+
+        />
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+   <ImageButton
+       android:onClick="clickGallery"
+       android:layout_margin="10dp"
+       android:background="@android:color/transparent"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_weight="5"
+       android:src="@drawable/gallery"
+       />
+    <ImageButton
+        android:onClick="clickCamera"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:background="@android:color/transparent"
+        android:src="@drawable/camera"
+        />
+    </LinearLayout>
+</RelativeLayout>
